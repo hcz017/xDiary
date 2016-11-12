@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3d4349"
+    android:orientation="vertical"
+    android:paddingTop="?attr/actionBarSize"
+    tools:context=".AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/head"
+        app:civ_border_color="#b1696363"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffededed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/slog"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff989898" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/github"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            android:src="@mipmap/github_64" />
+
+        <ImageButton
+            android:id="@+id/weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="#00000000"
+            android:src="@mipmap/weibo_64" />
+
+        <ImageButton
+            android:id="@+id/zhihu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@mipmap/zhihu_64" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/about_author"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ff989898" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/one_world_about"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff989898" />
+
+</LinearLayout>

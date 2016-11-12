@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/card_view_padding"
+    android:paddingRight="@dimen/card_view_padding"
+    android:paddingTop="@dimen/card_view_padding">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@animator/touch_raise"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/at_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="title"
+                    android:padding="5dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/at_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="2016-11-06"
+                    android:textAlignment="viewEnd" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/at_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="content"
+                android:padding="5dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
