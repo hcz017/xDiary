@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
     public void displayUserInfo() {
         // in case we need to change text
         userHeader.setImageResource(R.mipmap.head);
-        userName.setText("Edison");
-        userEmail.setText("hcz017@gmail.com");
+        userName.setText("尔雅");
+        userEmail.setText("414***723@qq.com");
     }
 }
