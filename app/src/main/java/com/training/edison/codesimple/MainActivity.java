@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         userEmail = (TextView) headerView.findViewById(R.id.textView_email);
         displayUserInfo();
         displayView(R.id.nav_home);
-        methodRequiresTwoPermission();
+//        methodRequiresTwoPermission();
     }
 
     @AfterPermissionGranted(RC_CAMERA_STORAGE)

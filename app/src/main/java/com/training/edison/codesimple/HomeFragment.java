@@ -25,6 +25,7 @@ import java.util.List;
 public class HomeFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private static final String TAG = "HomeFragment";
+    private String mBlogUrl = "http://tenthorange.farbox.com/";
     private List<ArticleBean> articleBeanList = new ArrayList<>();
 
     public HomeFragment() {
@@ -51,17 +52,17 @@ public class HomeFragment extends Fragment {
             Document doc;
             try {
                 //URL加载一个Document
-                doc = Jsoup.connect("http://codesimple.farbox.com/").get();
+                doc = Jsoup.connect(mBlogUrl).get();
                 //使用DOM方法来遍历文档，并抽取元素
                 //每一篇文章
-                Elements elements = doc.select("article.post");
+                Elements elements = doc.select("div.content");
                 for (Element element : elements) {
                     Elements articleInfo = element.select("h1.title");//标题信息
-                    Log.i(TAG, "run: articleInfo: " + articleInfo);
                     String title = element.select("h1.title").text().trim();//标题
                     String link = element.select("h1.title").select("a").attr("abs:href"); //链接
-                    String time = element.select("div.date").text();
+                    String time = element.select("span.pub_date").text();//时间
                     Elements articleContent = element.select("div.p_part");
+                    Log.i(TAG, "run: articleInfo: " + articleInfo);
                     Log.i(TAG, "run: title: " + title);
                     Log.i(TAG, "run: link: " + link);
                     Log.i(TAG, "run: time: " + time);
