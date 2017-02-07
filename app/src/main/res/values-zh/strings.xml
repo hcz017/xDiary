@@ -10,5 +10,12 @@
     <string name="cancel">取消</string>
     <string name="settings_dialog_canceled">取消设置</string>
     <string name="returned_from_app_settings_to_activity">从app设置返回。</string>
+    <string name="home">主页</string>
+    <string name="archive">归档</string>
+    <string name="about">关于</string>
+    <string name="about_author">关于作者</string>
+    <string name="action_settings">设置</string>
+    <string name="about_activity">关于</string>
+    <string name="one_world_about">整天想代码，半个厨子心。</string>
 
 </resources>

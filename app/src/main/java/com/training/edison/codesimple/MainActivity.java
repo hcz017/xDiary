@@ -167,18 +167,12 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
             case R.id.nav_home:
                 // Handle the camera action
                 fragment = new HomeFragment();
-                title = "Home";
+                title = getString(R.string.home);
                 break;
             case R.id.nav_archive:
                 fragment = new ArchiveFragment();
-                title = "Archive";
+                title = getString(R.string.archive);
                 break;
-            case R.id.nav_slideshow:
-                fragment = new CategoryFragment();
-                title = "Category";
-                break;
-            case R.id.nav_manage:
-            case R.id.nav_share:
             case R.id.nav_about:
                 Intent aboutIntent = new Intent(this, AboutActivity.class);
                 startActivity(aboutIntent);
