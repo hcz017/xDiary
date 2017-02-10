@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +23,9 @@ import java.util.ArrayList;
 
 public class ArchiveFragment extends Fragment {
 
+    private static final String TAG = "ArchiveFragment";
     private ListView listView;
+    private static final int GET_ARCHIVE_DONE = 1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,7 +33,6 @@ public class ArchiveFragment extends Fragment {
         View parentView = inflater.inflate(R.layout.fragment_archive, container, false);
         listView = (ListView) parentView.findViewById(R.id.listView);
         new Thread(runnable).start();
-        //initView();
         return parentView;
     }
 
@@ -38,46 +40,44 @@ public class ArchiveFragment extends Fragment {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
-            Bundle data = msg.getData();
-            String val = data.getString("value");
-//            Log.i("connect().get()", val);
-            initView();
+            switch (msg.what) {
+                case GET_ARCHIVE_DONE:
+                    ArrayList<String> arr = (ArrayList<String>) msg.obj;
+                    initView(arr);
+                    break;
+                default:
+            }
         }
     };
-
-    private final ArrayList<String> arr = new ArrayList<>();
 
     private final Runnable runnable = new Runnable() {
         @Override
         public void run() {
+            ArrayList<String> arr = new ArrayList<>();
             Document doc;
             try {
                 //URL加载一个Document
-                doc = Jsoup.connect("http://codesimple.farbox.com/archive").get();
+                doc = Jsoup.connect("http://tenthorange.farbox.com/archive").get();
                 //使用DOM方法来遍历文档，并抽取元素
-                Elements title = doc.getElementsByAttributeValue("class", "title");
-                for (Element element : title) {
-                    Elements links = element.getElementsByTag("a");
-                    for (Element link : links) {
-                        String linkHref = link.attr("href");
-                        String linkText = link.text().trim();
-                        arr.add(linkText);
-                        System.out.println(linkHref);
-                        System.out.println(linkText);
-                    }
+                Elements items = doc.select("li.listing_item");
+                for (Element item : items) {
+                    String title = item.select("a").text().trim();
+                    String link = item.select("a").attr("abs:href");
+                    Log.d(TAG, "run: title: " + title);
+                    Log.d(TAG, "run: link: " + link);
+                    arr.add(title);
                 }
-                Message msg = new Message();
-                Bundle data = new Bundle();
-                data.putString("value", title.toString());
-                msg.setData(data);
-                handler.sendMessage(msg);
+                Message message = Message.obtain();
+                message.what = GET_ARCHIVE_DONE;
+                message.obj = arr;
+                handler.sendMessage(message);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     };
 
-    private void initView() {
+    private void initView(ArrayList<String> arr) {
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
                 getActivity(),
                 android.R.layout.simple_list_item_1,
