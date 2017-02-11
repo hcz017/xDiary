@@ -15,6 +15,11 @@ public class ArticleBean {
         this.mLink = link;
     }
 
+    public ArticleBean(String mTitle, String link) {
+        this.mTitle = mTitle;
+        this.mLink = link;
+    }
+
     public String getTitle() {
         return mTitle;
     }

@@ -61,22 +61,18 @@ public class HomeFragment extends Fragment {
                 //每一篇文章
                 Elements elements = doc.select("div.content");
                 for (Element element : elements) {
-                    Elements articleInfo = element.select("h1.title");//标题信息
                     String title = element.select("h1.title").text().trim();//标题
                     String link = element.select("h1.title").select("a").attr("abs:href"); //链接
                     String time = element.select("span.pub_date").text();//时间
                     time = formatDate(time);
                     Elements articleContent = element.select("div.p_part");
-                    Log.i(TAG, "run: articleInfo: " + articleInfo);
                     Log.i(TAG, "run: title: " + title);
                     Log.i(TAG, "run: link: " + link);
                     Log.i(TAG, "run: time: " + time);
-                    Log.i(TAG, "run: articleContent.attr: " + articleContent.select("p").attr(""));
-                    String content = "";
-                    for (Element ac : articleContent) {
-                        Log.i(TAG, "run: ac: " + ac.text());
-                        content = content + ac.text() + "\n";
-                    }
+                    String content = (articleContent.select("p") + "").replaceAll("<p>", "")
+//                            .replaceAll("</p>", "");
+                            .replaceAll("</p>", "").replaceAll("[<].*[>]", "[图片]");
+                    Log.i(TAG, "run: articleContent.attr:\n" + content);
                     articleBeanList.add(new ArticleBean(title, time, content, link));
                 }
             } catch (IOException e) {
@@ -107,10 +103,10 @@ public class HomeFragment extends Fragment {
 
     public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-        private final List<ArticleBean> mArticleBeen;
+        private final List<ArticleBean> mArticleBeanList;
 
         public MyAdapter(List<ArticleBean> articleBeanList) {
-            mArticleBeen = articleBeanList;
+            mArticleBeanList = articleBeanList;
         }
 
         //创建新View，被LayoutManager所调用
@@ -124,16 +120,16 @@ public class HomeFragment extends Fragment {
         //将数据与界面进行绑定的操作
         @Override
         public void onBindViewHolder(final MyAdapter.ViewHolder viewHolder, int position) {
-            viewHolder.mAtTitle.setText(mArticleBeen.get(position).getTitle());
-            viewHolder.mAtTime.setText(mArticleBeen.get(position).getTime());
-            viewHolder.mAtContent.setText(mArticleBeen.get(position).getContent());
+            viewHolder.mAtTitle.setText(mArticleBeanList.get(position).getTitle());
+            viewHolder.mAtTime.setText(mArticleBeanList.get(position).getTime());
+            viewHolder.mAtContent.setText(mArticleBeanList.get(position).getContent());
 
             viewHolder.mCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = viewHolder.getAdapterPosition();
-                    String link = mArticleBeen.get(position).getLink();
-                    String title = mArticleBeen.get(position).getTitle();
+                    String link = mArticleBeanList.get(position).getLink();
+                    String title = mArticleBeanList.get(position).getTitle();
                     Intent articlePost = new Intent(getActivity(), ArticleActivity.class);
                     articlePost.putExtra(ArticleBean.LINK, link);
                     articlePost.putExtra(ArticleBean.TITLE,title);
@@ -145,7 +141,7 @@ public class HomeFragment extends Fragment {
         //获取数据的数量
         @Override
         public int getItemCount() {
-            return mArticleBeen.size();
+            return mArticleBeanList.size();
         }
 
         //自定义的ViewHolder，持有每个Item的的所有界面元素
