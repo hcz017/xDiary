@@ -19,8 +19,12 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class HomeFragment extends Fragment {
     private RecyclerView mRecyclerView;
@@ -61,6 +65,7 @@ public class HomeFragment extends Fragment {
                     String title = element.select("h1.title").text().trim();//标题
                     String link = element.select("h1.title").select("a").attr("abs:href"); //链接
                     String time = element.select("span.pub_date").text();//时间
+                    time = formatDate(time);
                     Elements articleContent = element.select("div.p_part");
                     Log.i(TAG, "run: articleInfo: " + articleInfo);
                     Log.i(TAG, "run: title: " + title);
@@ -85,6 +90,19 @@ public class HomeFragment extends Fragment {
             MyAdapter mAdapter = new MyAdapter(articleBeanList);
             mRecyclerView.setAdapter(mAdapter);
         }
+    }
+
+    //格式化时间
+    public String formatDate(String date) {
+        DateFormat dateFormat = SimpleDateFormat.getDateInstance();
+        SimpleDateFormat transToDate = new SimpleDateFormat("MMMM dd, yyyy", Locale.ENGLISH);
+        String localDate = null;
+        try {
+            localDate = dateFormat.format(transToDate.parse(date));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return localDate;
     }
 
     public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
