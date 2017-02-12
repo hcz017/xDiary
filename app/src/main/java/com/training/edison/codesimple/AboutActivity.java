@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
@@ -12,6 +13,7 @@ import android.widget.ImageButton;
 public class AboutActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "AboutActivity";
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +61,14 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 Intent intentGit = new Intent(Intent.ACTION_VIEW);
                 intentGit.setData(Uri.parse("http://github.com/hcz017"));
                 startActivity(intentGit);
+                break;
+            case R.id.profile_image:
+                Log.i(TAG, "onClick: profile on click");
+                count++;
+                if (count >= 7) {
+                    findViewById(R.id.pay).setVisibility(View.VISIBLE);
+                    findViewById(R.id.alipay).setVisibility(View.VISIBLE);
+                }
                 break;
             default:
         }
