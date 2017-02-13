@@ -23,6 +23,7 @@
     <string name="one_world_about">整天想代码，半个厨子心。</string>
     <string name="about_author">About Author</string>
     <string name="slog">Codes make life simple.</string>
+    <string name="days_past"> days have passed.</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"

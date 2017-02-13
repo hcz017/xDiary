@@ -15,8 +15,9 @@ public class ArticleBean {
         this.mLink = link;
     }
 
-    public ArticleBean(String mTitle, String link) {
+    public ArticleBean(String mTitle, String date, String link) {
         this.mTitle = mTitle;
+        this.mTime = date;
         this.mLink = link;
     }
 

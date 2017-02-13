@@ -94,6 +94,7 @@ public class HomeFragment extends Fragment {
         SimpleDateFormat transToDate = new SimpleDateFormat("MMMM dd, yyyy", Locale.ENGLISH);
         String localDate = null;
         try {
+            //String转换成英文date，再转换成本机时间格式（String）
             localDate = dateFormat.format(transToDate.parse(date));
         } catch (ParseException e) {
             e.printStackTrace();
