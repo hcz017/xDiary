@@ -60,8 +60,6 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         userHeader = (CircleImageView) headerView.findViewById(R.id.profile_image);
         userName = (TextView) headerView.findViewById(R.id.textView_user_name);
         userEmail = (TextView) headerView.findViewById(R.id.textView_email);
-        Intent roseActivity =  new Intent(this, RoseActivity.class);
-        startActivity(roseActivity);
         displayUserInfo();
         displayView(R.id.nav_home);
 //        methodRequiresTwoPermission();

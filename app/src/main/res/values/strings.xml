@@ -11,7 +11,7 @@
     <string name="returned_from_app_settings_to_activity">Returned from app settings to MainActivity</string>
     <string name="has_read_sms_permission">Has read sms permission: %b</string>
 
-    <string name="app_name">@string/app_name_vanesa</string>
+    <string name="app_name">CodeSimple</string>
     <string name="app_name_vanesa">Love Diary</string>
     <string name="action_settings">Settings</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -25,185 +25,93 @@
     <string name="slog">Codes make life simple.</string>
     <string name="days_past"> days have passed.</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
 
-    <!--animations-->
-    <string name="rose_1">
-        M 192.42 0.03 C 202.77 2.36 212.15 11.20 213.16 22.05 C 217.15 24.98 220.55
-28.99 221.46 33.98 C 223.40 43.65 220.00 53.39 216.09 62.13 C 213.91 66.14
-215.65 70.85 214.60 75.13 C 212.33 87.80 206.74 100.23 197.52 109.36 C 192.09
-115.06 183.70 115.87 177.66 120.66 C 175.15 122.55 172.79 125.22 169.33 125.01 C
-170.03 125.53 170.74 126.04 171.46 126.55 C 175.81 125.44 178.83 121.93 182.64
-119.78 C 185.72 117.74 189.49 117.38 192.90 116.16 C 197.10 114.79 200.56 111.83
-203.48 108.60 C 213.48 97.16 219.63 82.45 220.84 67.30 C 228.15 61.86 235.37
-54.93 244.88 54.03 C 251.01 53.31 256.56 56.57 261.21 60.17 C 265.54 59.96
-270.15 59.50 274.09 61.78 C 279.38 64.42 282.65 69.85 283.86 75.50 C 276.48
-73.85 268.40 75.52 262.85 80.82 C 250.97 91.68 244.66 107.02 234.09 118.97 C
-228.52 125.46 220.51 129.51 212.12 130.85 C 208.11 131.72 204.05 130.58 200.01
-130.75 C 193.99 131.06 188.00 132.98 181.95 131.99 C 177.46 131.28 173.59 128.75
-169.37 127.25 C 169.23 126.85 168.95 126.07 168.81 125.67 C 167.27 125.84 166.16
-124.74 165.11 123.83 C 161.58 120.60 158.41 116.83 156.52 112.40 C 154.21 107.22
-154.37 101.40 152.68 96.04 C 148.91 84.65 150.57 71.43 157.55 61.59 C 166.78
-47.97 179.08 36.69 187.77 22.68 C 191.98 16.02 195.02 7.89 192.42 0.03 Z
-        M 220.21 22.25 C 232.95 16.04 249.02 21.99 256.28 33.71 C 260.22 39.57 261.37
-46.98 259.95 53.84 C 254.25 49.67 246.69 47.95 239.88 50.18 C 232.95 52.02
-227.35 56.64 221.56 60.62 C 225.69 51.45 229.23 41.10 226.54 31.01 C 225.69
-27.34 223.08 24.52 220.21 22.25 Z
-    </string>
-    <string name="rose_2">
-        M 78.65 125.10 C 80.44 114.24 89.47 106.60 98.17 100.84 C 101.68 105.28 105.02
-110.17 105.92 115.88 C 107.02 121.98 104.61 128.18 100.81 132.90 C 97.73 137.06
-93.02 139.86 90.61 144.55 C 86.73 151.68 86.70 160.03 84.11 167.60 C 109.49
-162.46 134.18 150.90 152.17 131.94 C 151.34 122.56 150.21 113.05 151.58 103.66 C
-152.33 114.02 158.02 123.71 166.49 129.65 C 172.77 134.25 180.69 135.48 188.30
-135.46 C 177.50 137.79 166.27 135.89 155.62 133.60 C 148.16 141.23 140.04 148.30
-130.76 153.65 C 135.88 153.32 140.96 154.74 145.04 157.88 C 150.63 161.92 156.30
-166.51 163.47 167.10 C 156.91 172.42 148.73 177.38 139.91 175.70 C 131.19 174.07
-125.39 166.11 122.87 158.09 C 115.88 161.68 108.56 164.59 101.09 167.01 C 78.63
-174.39 54.60 174.44 31.95 180.99 C 24.45 183.02 18.12 187.65 11.55 191.58 C 7.90
-193.79 4.90 196.86 1.83 199.78 C 1.37 199.08 0.46 197.69 0.00 196.99 L 0.00
-196.92 C 4.78 191.64 10.36 187.08 16.61 183.66 C 35.02 173.51 56.45 172.22 76.77
-168.72 C 80.57 168.27 82.13 164.27 82.80 161.01 C 84.01 155.15 85.00 149.21
-87.31 143.65 C 81.39 139.56 77.35 132.43 78.65 125.10 Z
-        M 67.70 144.28 C 63.87 138.98 64.67 131.91 66.40 125.97 C 70.15 127.87 73.90
-130.15 76.26 133.74 C 80.19 139.50 78.50 147.57 83.70 152.67 C 77.92 151.04
-71.40 149.44 67.70 144.28 Z
-    </string>
-    <string name="final_rose_red">
-        "M 124.59 18.04 C 132.08 17.44 140.04 17.73 146.91 21.09 C 154.56 24.74 158.38
-33.95 156.91 42.09 C 155.84 51.88 148.40 59.34 140.67 64.66 C 127.96 73.16
-113.09 78.07 98.06 80.41 C 86.90 81.82 74.58 82.66 64.49 76.75 C 76.50 78.24
-88.61 76.27 100.24 73.30 C 111.05 70.35 121.76 66.39 131.14 60.15 C 135.78 56.90
-140.29 52.98 142.75 47.75 C 145.04 42.88 144.26 37.00 141.33 32.58 C 137.21
-26.29 130.88 21.94 124.59 18.04 Z"
-        "M 53.29 33.28 C 59.35 27.77 68.24 27.62 75.99 27.46 C 70.50 30.06 64.52 33.81
-63.16 40.19 C 61.70 47.44 66.15 54.07 70.40 59.50 C 74.35 64.39 79.03 68.61
-83.64 72.86 C 71.85 68.40 60.91 60.77 53.88 50.18 C 50.66 45.32 48.53 37.89
-53.29 33.28 Z"
-        "M 105.36 30.33 C 108.79 28.28 112.68 30.32 115.61 32.29 C 119.67 35.10 124.26
-37.73 126.67 42.23 C 127.96 44.37 127.55 47.21 125.86 49.00 C 120.71 54.70
-112.23 56.86 104.89 54.80 C 100.40 53.71 96.51 51.09 93.11 48.06 C 99.53 50.62
-107.03 52.33 113.65 49.47 C 116.86 48.12 119.92 44.80 118.86 41.08 C 117.36
-37.21 112.68 35.60 108.81 36.01 C 104.54 36.35 101.04 39.15 98.15 42.09 C 99.88
-37.87 101.29 32.93 105.36 30.33 Z"
-        "M 79.01 38.99 C 80.76 35.25 84.84 33.73 88.49 32.52 C 85.48 36.94 84.38 42.61
-86.15 47.73 C 87.57 51.30 90.39 54.04 92.84 56.91 C 88.54 54.10 84.07 51.33
-80.62 47.46 C 78.59 45.21 77.51 41.82 79.01 38.99 Z"
-        "M 101.74 61.50 C 112.40 59.03 124.03 57.98 132.91 50.90 C 130.97 54.96 128.40
-59.21 123.94 60.83 C 116.84 63.53 109.09 61.84 101.74 61.50 Z"
-        M 158.81 50.97 C 164.41 54.13 170.47 57.21 174.31 62.56 C 176.35 65.22 175.93
-69.17 173.47 71.41 C 168.68 75.93 162.19 77.93 156.10 80.02 C 138.07 85.94
-118.85 87.99 101.37 95.59 C 107.54 88.60 116.64 85.55 125.12 82.41 C 135.10
-78.63 146.13 75.63 153.61 67.53 C 157.85 63.16 159.15 56.88 158.81 50.97 Z
-        "M 28.64 57.03 C 33.13 54.03 38.62 52.11 44.07 52.99 C 50.97 53.94 57.46 58.60
-59.75 65.29 C 61.26 69.56 60.56 74.21 58.88 78.31 C 53.69 72.46 49.66 65.35
-43.00 60.99 C 38.77 58.16 33.61 57.36 28.64 57.03 Z"
-        "M 75.73 56.09 C 86.16 56.73 95.89 61.29 104.31 67.25 C 97.75 64.87 91.00 62.81
-83.94 63.10 C 80.91 61.15 78.44 58.45 75.73 56.09 Z"
-        "M 34.41 78.37 C 38.13 75.80 42.92 76.88 46.96 78.00 C 59.00 81.67 70.62 86.59
-81.92 92.10 C 95.43 98.74 108.96 105.70 120.69 115.23 C 124.87 118.79 129.22
-122.72 131.07 128.04 C 132.58 131.86 130.37 136.02 127.13 138.13 C 121.42 141.98
-114.47 143.18 107.85 144.58 C 113.30 141.45 119.59 138.34 122.29 132.30 C 124.23
-127.48 121.09 122.54 117.67 119.32 C 111.34 113.39 103.65 109.23 96.31 104.71 C
-84.41 97.55 71.92 91.05 58.46 87.39 C 49.01 84.83 38.64 84.04 29.40 87.84 C
-30.37 84.42 31.24 80.48 34.41 78.37 Z"
-        "M 125.43 149.09 C 142.87 130.95 151.97 106.87 160.58 83.69 C 156.48 98.41 152.75
-113.37 146.19 127.24 C 141.78 136.36 135.60 145.85 125.43 149.09 Z"
-        "M 56.07 93.63 C 60.52 107.19 64.99 121.05 73.06 132.96 C 78.78 141.43 87.24
-148.32 97.27 150.84 C 104.41 152.86 111.87 152.46 119.19 152.17 C 106.80 155.01
-93.00 156.66 81.22 150.75 C 71.63 145.97 66.09 136.04 62.86 126.23 C 59.54
-115.62 57.54 104.63 56.07 93.63 Z"
-    </string>
-    <string name="final_rose_green">
-        "M 40.73 128.69 C 47.52 131.97 50.20 139.52 55.95 144.01 C 64.79 151.60 77.04
-151.88 87.81 154.70 C 81.13 156.86 73.57 158.22 66.99 154.99 C 58.43 150.77
-51.04 143.96 46.34 135.62 C 44.83 133.04 42.77 130.85 40.73 128.69 Z"
-        "M 154.90 151.01 C 160.28 148.57 165.12 145.18 170.01 141.91 C 162.11 148.93
-153.80 156.11 143.60 159.49 C 134.52 162.55 124.42 160.88 116.11 156.40 C 129.20
-158.93 142.94 156.81 154.90 151.01 Z"
-        "M 94.61 158.26 C 100.47 159.39 106.48 159.28 112.38 158.47 C 109.19 166.32
-104.58 173.56 98.94 179.88 C 97.13 181.92 94.30 182.27 91.82 182.96 C 93.41
-181.54 95.72 180.43 95.95 178.06 C 97.24 171.49 96.92 164.58 94.61 158.26 Z"
-        "M 60.31 159.23 C 66.81 160.65 73.40 159.76 79.81 158.30 C 74.61 164.08 66.48
-161.76 60.31 159.23 Z"
-        "M 116.34 159.65 C 119.85 160.59 123.53 161.30 126.53 163.48 C 129.99 165.82
-134.21 166.23 138.26 166.54 C 133.06 167.52 127.39 167.82 122.50 165.48 C 119.86
-164.26 118.07 161.89 116.34 159.65 Z"
-    </string>
-    <string name="rose400_1">
-        "M 248.81 35.94 C 263.99 35.05 280.04 35.27 293.96 42.13 C 306.29 48.12 313.94
-61.58 314.42 75.06 C 314.51 82.15 313.54 89.35 311.02 96.00 C 306.97 106.37
-299.31 114.84 291.00 122.03 C 278.42 132.59 263.75 140.36 248.61 146.56 C 221.78
-157.22 192.91 163.67 163.94 162.71 C 151.70 162.08 139.02 159.98 128.57 153.17 C
-141.09 155.36 153.92 154.65 166.48 153.21 C 188.73 150.38 210.63 144.75 231.44
-136.37 C 246.08 130.30 260.53 123.01 272.45 112.40 C 280.42 105.29 287.49 95.93
-288.25 84.93 C 288.93 75.94 284.92 67.35 279.40 60.49 C 271.05 50.27 260.09
-42.61 248.81 35.94 Z"
-        "M 107.09 66.03 C 114.72 59.08 125.31 56.94 135.23 55.73 C 140.73 55.15 146.25
-54.88 151.77 54.99 C 141.96 59.63 131.69 65.87 127.41 76.38 C 123.35 86.26
-126.74 97.28 131.82 106.10 C 140.81 121.49 154.05 133.77 167.22 145.53 C 150.91
-139.80 135.96 130.43 123.29 118.71 C 114.04 109.95 105.42 99.68 101.88 87.21 C
-99.74 79.89 101.29 71.28 107.09 66.03 Z"
-        "M 209.56 61.41 C 214.48 57.60 221.31 58.80 226.36 61.68 C 232.99 65.50 239.35
-69.82 245.19 74.76 C 249.46 78.56 253.98 83.06 254.76 89.01 C 255.38 93.48
-252.72 97.56 249.50 100.39 C 241.27 107.68 230.15 111.77 219.13 111.09 C 206.97
-110.48 195.35 104.84 186.73 96.35 C 198.09 100.87 210.81 103.82 222.90 100.59 C
-229.01 98.90 235.28 95.19 237.57 88.97 C 239.40 84.73 237.46 79.83 234.14 76.94
-C 228.49 71.87 220.07 70.85 212.95 72.94 C 206.43 74.79 201.02 79.18 196.58
-84.16 C 199.37 75.92 202.39 66.89 209.56 61.41 Z"
-        "M 157.69 78.70 C 161.03 70.85 169.51 67.12 177.30 65.22 C 174.92 68.48 172.79
-71.99 171.64 75.88 C 169.91 81.42 170.79 87.31 171.46 92.94 C 173.99 101.42
-180.37 107.97 186.31 114.25 C 177.56 108.38 168.24 102.98 161.22 94.97 C 157.41
-90.65 154.94 84.21 157.69 78.70 Z"
-        "M 221.47 119.20 C 236.91 115.92 253.40 112.49 265.50 101.59 C 263.05 108.38
-259.09 114.90 253.00 118.99 C 246.01 123.76 237.26 124.78 229.00 124.75 C 220.40
-124.42 211.80 123.78 203.26 122.65 C 209.39 121.87 215.41 120.39 221.47 119.20 Z"
-        "M 317.40 101.97 C 326.34 106.50 335.12 111.59 342.63 118.29 C 346.58 121.99
-350.58 126.40 351.24 132.02 C 351.72 136.36 349.41 140.49 346.34 143.39 C 340.06
-149.36 331.93 152.81 323.98 155.96 C 290.03 168.54 253.90 173.59 219.48 184.63 C
-213.72 186.49 208.06 188.69 202.76 191.63 C 208.11 184.48 215.92 179.73 223.71
-175.64 C 241.06 167.10 259.86 162.10 277.59 154.46 C 289.68 149.21 301.85 142.63
-309.90 131.86 C 316.21 123.37 318.54 112.38 317.40 101.97 Z"
-        "M 57.61 114.09 C 65.38 108.26 75.16 104.93 84.91 105.66 C 97.12 106.36 109.04
-112.83 115.78 123.12 C 122.47 132.88 122.79 146.01 117.66 156.52 C 110.08 147.72
-103.51 138.05 95.38 129.73 C 89.05 123.14 80.97 118.10 72.01 116.07 C 67.31
-114.80 62.42 114.63 57.61 114.09 Z"
-        "M 151.18 112.12 C 172.30 113.39 192.02 122.63 209.01 134.81 C 195.84 130.00
-182.15 125.12 167.89 126.47 C 162.02 122.12 156.80 116.83 151.18 112.12 Z"
-        "M 70.61 155.60 C 78.48 151.76 87.50 154.10 95.47 156.39 C 115.80 162.95 135.72
-170.80 155.01 179.99 C 175.06 189.55 194.99 199.44 213.90 211.13 C 225.61 218.47
-237.17 226.23 247.31 235.69 C 254.18 242.35 261.54 249.89 262.97 259.79 C 264.05
-267.33 258.65 273.88 252.49 277.45 C 241.33 284.03 228.44 286.91 215.78 288.92 C
-225.13 284.11 234.72 278.75 241.28 270.31 C 245.27 265.34 247.05 258.42 244.78
-252.32 C 241.84 244.08 235.05 238.03 228.43 232.68 C 218.77 225.07 208.14 218.85
-197.68 212.43 C 179.56 201.29 160.87 190.91 141.13 182.90 C 125.11 176.50 108.33
-171.29 91.00 170.45 C 80.09 169.78 69.03 171.50 58.96 175.80 C 60.39 168.11
-63.17 159.45 70.61 155.60 Z"
-        "M 286.47 248.35 C 300.56 222.49 311.09 194.91 321.20 167.31 C 312.24 199.08
-304.45 231.61 289.10 261.06 C 280.67 276.83 268.85 292.84 250.91 298.12 C 265.27
-283.50 276.78 266.35 286.47 248.35 Z"
-        "M 111.99 187.49 C 117.85 204.79 123.60 222.18 131.15 238.84 C 140.63 259.97
-153.68 280.87 173.98 293.07 C 194.36 305.52 219.50 306.89 242.56 303.10 C 220.92
-308.91 197.66 312.28 175.62 306.64 C 160.06 302.77 146.53 292.45 137.99 278.97 C
-126.98 261.82 122.00 241.70 117.93 221.96 C 115.75 210.51 113.55 199.05 111.99
-187.49 Z"
-    </string>
-    <string name="rose400_2">
-        "M 80.95 257.20 C 86.46 260.41 92.11 263.90 95.65 269.38 C 103.48 281.00 113.48
-291.88 126.73 297.23 C 142.43 303.63 159.43 305.41 175.80 309.37 C 167.07 311.90
-158.09 314.40 148.91 313.78 C 138.83 313.09 129.44 308.49 121.41 302.59 C 112.29
-295.87 103.70 288.18 97.24 278.80 C 94.16 274.47 92.09 269.50 88.78 265.32 C
-86.50 262.31 83.60 259.86 80.95 257.20 Z"
-        "M 309.99 301.99 C 320.82 296.97 330.74 290.28 340.46 283.43 C 328.80 293.94
-316.73 304.21 303.06 312.04 C 291.29 318.82 277.72 322.99 264.04 322.16 C 252.79
-321.40 241.76 317.98 231.84 312.68 C 258.16 318.12 285.95 313.71 309.99 301.99 Z"
-        "M 117.78 317.02 C 122.17 317.92 126.43 319.44 130.91 319.93 C 140.60 321.36
-150.02 317.95 159.47 316.41 C 155.33 321.04 149.33 324.14 143.05 324.04 C 134.15
-324.05 125.91 320.16 117.78 317.02 Z"
-        "M 189.10 316.44 C 200.80 319.09 212.91 318.48 224.71 316.92 C 218.46 332.71
-209.05 347.12 197.84 359.81 C 194.05 364.11 188.12 365.09 182.69 365.29 C 186.47
-363.65 190.99 361.62 191.79 357.08 C 194.31 343.62 194.28 329.31 189.10 316.44 Z"
-        "M 232.63 318.74 C 237.30 321.18 242.57 321.90 247.51 323.51 C 251.73 326.52
-256.16 329.36 261.20 330.81 C 267.03 332.81 273.25 332.76 279.30 333.47 C 268.82
-334.28 257.91 335.88 247.78 332.14 C 241.18 329.86 236.02 324.73 232.63 318.74 Z"
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
     </string>
 </resources>
