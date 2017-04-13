@@ -55,7 +55,7 @@ public class ArticleActivity extends AppCompatActivity {
             int bgIndex = (int) (Math.random() * 10 % 5);
             int resId[] = {R.drawable.bg_0, R.drawable.bg_1, R.drawable.bg_2, R.drawable.bg_3,
                     R.drawable.bg_4};
-            findViewById(R.id.app_bar).setBackgroundResource(resId[bgIndex]);
+            findViewById(R.id.img_bg).setBackgroundResource(resId[bgIndex]);
             mWebView.loadDataWithBaseURL("x-data://base", result, "text/html", "utf-8", null);
         }
     }
