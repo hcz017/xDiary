@@ -2,6 +2,7 @@ package com.training.edison.codesimple;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -29,7 +30,9 @@ public class ArticleActivity extends AppCompatActivity {
         mWebView = (WebView) findViewById(R.id.web_view);
         mTitle = getIntent().getStringExtra(ArticleBean.TITLE);
         mLink = getIntent().getStringExtra(ArticleBean.LINK);
-        this.setTitle(mTitle);
+        CollapsingToolbarLayout collapsingToolbarLayout
+                = (CollapsingToolbarLayout) findViewById(R.id.toolbar_layout);
+        collapsingToolbarLayout.setTitle(mTitle);
         Log.i(TAG, "onCreate: link " + mLink);
         MyAsyncTask mAsyncTask = new MyAsyncTask();
         mAsyncTask.execute();
