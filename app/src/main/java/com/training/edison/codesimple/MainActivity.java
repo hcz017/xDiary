@@ -16,6 +16,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -63,6 +66,10 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
         displayUserInfo();
         displayView(R.id.nav_home);
 //        methodRequiresTwoPermission();
+
+        ImageView image_scale = (ImageView) findViewById(R.id.img_heart);
+        Animation animation = AnimationUtils.loadAnimation(this, R.animator.heart_beat);
+        image_scale.startAnimation(animation);
     }
 
     @AfterPermissionGranted(RC_CAMERA_STORAGE)
