@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 //        methodRequiresTwoPermission();
 
         ImageView image_scale = (ImageView) findViewById(R.id.img_heart);
-        Animation animation = AnimationUtils.loadAnimation(this, R.animator.heart_beat);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.heart_beat);
         image_scale.startAnimation(animation);
     }
 
