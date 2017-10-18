@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rationale_camera">應用需要使用相機拍照。</string>
+    <string name="rationale_camera_and_storage">應用需要相機和存儲權限。</string>
+    <string name="rationale_location_contacts">應用需要獲取你的位置和聯繫人信息。</string>
+    <string name="rationale_sms">應用需要讀取您的短信。</string>
+    <string name="rationale_ask_again">應用缺少權限將不能正常工作。打開應用設置介面更改權限。</string>
+    <string name="title_settings_dialog">權限申請</string>
+    <string name="setting">設置</string>
+    <string name="cancel">取消</string>
+    <string name="settings_dialog_canceled">取消設置</string>
+    <string name="returned_from_app_settings_to_activity">從app設置返回。</string>
+    <string name="home">主頁</string>
+    <string name="archive">歸檔</string>
+    <string name="about">關於</string>
+    <string name="about_author">關於作者</string>
+    <string name="action_settings">設置</string>
+    <string name="about_activity">關於</string>
+    <string name="one_world_about">整天想代碼，半個廚子心。</string>
+    <string name="days_past"> 天之前</string>
+
+</resources>
