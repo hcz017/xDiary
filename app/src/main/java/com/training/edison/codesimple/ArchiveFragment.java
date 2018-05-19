@@ -64,7 +64,7 @@ public class ArchiveFragment extends Fragment {
             Document doc;
             try {
                 //URL加载一个Document
-                doc = Jsoup.connect("http://tenthorange.farbox.com/archive").get();
+                doc = Jsoup.connect(Utils.BLOG_URL + "/archive").get();
                 //使用DOM方法来遍历文档，并抽取元素
                 Elements items = doc.select("li.listing_item");
                 for (Element item : items) {

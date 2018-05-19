@@ -5,8 +5,17 @@ public class ArticleBean {
     private String mTime;
     private String mContent;
     private String mLink;
+    private String mImgUrl;
     public static final String TITLE = "title";
     public static final String LINK = "link";
+
+    public ArticleBean(String mTitle, String mTime, String mContent, String link, String imgUrl) {
+        this.mTitle = mTitle;
+        this.mTime = mTime;
+        this.mContent = mContent;
+        this.mLink = link;
+        this.mImgUrl = imgUrl;
+    }
 
     public ArticleBean(String mTitle, String mTime, String mContent, String link) {
         this.mTitle = mTitle;
@@ -35,5 +44,9 @@ public class ArticleBean {
 
     public String getLink() {
         return mLink;
+    }
+
+    public String getImgUrl() {
+        return mImgUrl;
     }
 }

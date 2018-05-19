@@ -46,7 +46,7 @@ public class ArticleActivity extends AppCompatActivity {
             try {
                 doc = Jsoup.connect(mLink).get();
                 postBody = doc.select("div.post_body").toString();
-                postBody = postBody.replaceAll("/_image", "http://tenthorange.farbox.com/_image");
+                postBody = postBody.replaceAll("/_image", Utils.BLOG_URL + "/_image");
                 Log.i(TAG, "doInBackground: elements.toString\n" + postBody);
             } catch (IOException e) {
                 e.printStackTrace();

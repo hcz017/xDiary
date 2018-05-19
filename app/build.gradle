@@ -5,7 +5,7 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.training.edison.codesimple"
-        minSdkVersion 23
+        minSdkVersion 24
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -49,4 +49,5 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.10.1'
     implementation 'pub.devrel:easypermissions:0.2.1'
     testImplementation 'junit:junit:4.12'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
