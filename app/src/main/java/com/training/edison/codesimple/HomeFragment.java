@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment {
     // img
     private static final String IMG_URL_REG = "<img.*src=(.*?)[^>]*?>";
     // img src
-    private static final String IMG_SRC_REG = "http:\"?(.*?)(\"|>|\\s+)";
+    private static final String IMG_SRC_REG = "(http|https:)(.*?)(png|jpg|gif)(.*?)(?=\")";
 
     public HomeFragment() {
     }
@@ -75,7 +75,6 @@ public class HomeFragment extends Fragment {
                     final Matcher matcher = pattern.matcher(articleContent.toString());
                     if (matcher.find()){
                         imgUrl = matcher.group();
-                        imgUrl = imgUrl.substring(0, imgUrl.length() - 1);
                     }
 
                     Log.d(TAG, "run: title: " + title);

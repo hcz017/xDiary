@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -28,6 +29,8 @@ public class ArticleActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mWebView = (WebView) findViewById(R.id.web_view);
+        mWebView.setWebViewClient(new MyWebViewClient());
+        mWebView.getSettings().setJavaScriptEnabled(true);
         mTitle = getIntent().getStringExtra(ArticleBean.TITLE);
         mLink = getIntent().getStringExtra(ArticleBean.LINK);
         CollapsingToolbarLayout collapsingToolbarLayout
@@ -61,5 +64,25 @@ public class ArticleActivity extends AppCompatActivity {
             findViewById(R.id.img_bg).setBackgroundResource(resId[bgIndex]);
             mWebView.loadDataWithBaseURL("x-data://base", result, "text/html", "utf-8", null);
         }
+    }
+
+    private class MyWebViewClient extends WebViewClient {
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            Log.d(TAG, "onPageFinished: ");
+            imgReset();
+        }
+    }
+
+    private void imgReset() {
+        mWebView.loadUrl("javascript:(function(){" +
+                "var objs = document.getElementsByTagName('img'); " +
+                "for(var i=0;i<objs.length;i++)  " +
+                "{" +
+                "var img = objs[i];   " +
+                "img.style.maxWidth = '100%'; img.style.height = 'auto';  " +
+                "}" +
+                "})()");
     }
 }
