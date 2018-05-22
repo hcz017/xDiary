@@ -18,5 +18,8 @@
     <string name="about_activity">关于</string>
     <string name="one_world_about">整天想代码，半个厨子心。</string>
     <string name="days_past"> 天之前</string>
+    <string name="qrcode_description">扫码请你家程序员喝咖啡啦</string>
+    <string name="user_name">尔雅</string>
+    <string name="email_add">"414***723@qq.com"</string>
 
 </resources>

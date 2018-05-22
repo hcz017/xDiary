@@ -17,13 +17,6 @@ public class ArticleBean {
         this.mImgUrl = imgUrl;
     }
 
-    public ArticleBean(String mTitle, String mTime, String mContent, String link) {
-        this.mTitle = mTitle;
-        this.mTime = mTime;
-        this.mContent = mContent;
-        this.mLink = link;
-    }
-
     public ArticleBean(String mTitle, String date, String link) {
         this.mTitle = mTitle;
         this.mTime = date;

@@ -114,4 +114,7 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="qrcode_description">Scarn QR code to buy me a coffee.</string>
+    <string name="email_add">414***723@qq.com</string>
+    <string name="user_name">尔雅</string>
 </resources>

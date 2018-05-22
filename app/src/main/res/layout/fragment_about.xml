@@ -18,7 +18,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:onClick="onClick"
-        android:src="@mipmap/head_author"
+        android:src="@drawable/head_author"
         app:civ_border_color="#b1696363"
         app:civ_border_width="1dp" />
 
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="#00000000"
-            android:src="@mipmap/github_64" />
+            android:src="@drawable/github_64" />
 
         <ImageButton
             android:id="@+id/weibo"
@@ -61,14 +61,14 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:background="#00000000"
-            android:src="@mipmap/weibo_64" />
+            android:src="@drawable/weibo_64" />
 
         <ImageButton
             android:id="@+id/zhihu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#00000000"
-            android:src="@mipmap/zhihu_64" />
+            android:src="@drawable/zhihu_64" />
 
     </LinearLayout>
 
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="扫码请你家程序员喝咖啡啦"
+        android:text="@string/qrcode_description"
         android:textColor="#aaffffff"
         android:visibility="gone" />
 
@@ -108,6 +108,6 @@
         android:adjustViewBounds="true"
         android:visibility="gone"
         android:layout_marginBottom="3dp"
-        app:srcCompat="@mipmap/alipay" />
+        app:srcCompat="@drawable/alipay" />
 
 </LinearLayout>
