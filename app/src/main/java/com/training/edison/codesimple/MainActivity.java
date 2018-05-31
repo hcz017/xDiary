@@ -19,6 +19,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.training.edison.codesimple.home.HomeFragment;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements
