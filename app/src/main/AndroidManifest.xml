@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ArticleActivity"
+            android:name=".artical.ArticleActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBarTransparent" />
 

@@ -14,6 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.training.edison.codesimple.R;
+import com.training.edison.codesimple.artical.ArticleActivity;
+import com.training.edison.codesimple.artical.ArticleBean;
+import com.training.edison.codesimple.utils.Utils;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -33,7 +38,6 @@ public class ArchiveFragment extends Fragment {
     private ListView listView;
     private List<ArticleBean> articleBeanList = new ArrayList<>();
     private static final int GET_ARCHIVE_DONE = 1;
-    private SimpleDateFormat simpleDateFormat;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -87,12 +91,11 @@ public class ArchiveFragment extends Fragment {
     };
 
     private void initView(final List<ArticleBean> articleBeanList) {
-        //这里代码写的超烂,我不知道怎么从一个List里面提取出ArrayList!
         ArrayList<String> arr = new ArrayList<>();
-        for (int i = 0; i < articleBeanList.size(); i++) {
-            String title = articleBeanList.get(i).getTitle();
-            arr.add(title);
+        for (ArticleBean articleBean : articleBeanList) {
+            arr.add(articleBean.getTitle());
         }
+
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(
                 getActivity(),
                 android.R.layout.simple_list_item_1,
@@ -116,7 +119,7 @@ public class ArchiveFragment extends Fragment {
 
     public int pastDays(String postDate) {
         int days;
-        simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINESE);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINESE);
         long between = 0;
         Date curDate = new Date(System.currentTimeMillis());//获取当前时间
         try {
