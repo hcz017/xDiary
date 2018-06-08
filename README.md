@@ -1,18 +1,8 @@
-这是一个学习练手的app。  
-我也不知道后面会做成什么样子，可能有些想法都会在这个app上尝试一下。  
+# done
+1. 从正文内提取图片并显示在home
+2. 代码目录调整
 
-现在做成了专门给女票看的app了。
-
----
-已实现
-- 新增：添加CardView，添加CardView的点击效果；
-- 主页使用AsyncTask
-- About页面使用单独的Activity
-- 添加权限申请（使用[easypermissions](https://github.com/googlesamples/easypermissions)）
-- 显示文章内容
-- 格式化日期
-- 增加启动动画（现已删除）
-
----
-问题
-- 长按CardView产生的阴影是方的！
+# Todo
+## 增加设置
+1. home 是否显示图片的开关
+2. archive 页面点击文章是否要弹出天数的开关

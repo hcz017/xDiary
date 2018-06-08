@@ -1,4 +1,4 @@
-package com.training.edison.codesimple;
+package com.training.hcz017.xdiary;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,7 +19,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.training.edison.codesimple.home.HomeFragment;
+import com.training.hcz017.xdiary.home.HomeFragment;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 

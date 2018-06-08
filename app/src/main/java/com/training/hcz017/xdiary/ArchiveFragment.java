@@ -1,4 +1,4 @@
-package com.training.edison.codesimple;
+package com.training.hcz017.xdiary;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +14,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.training.edison.codesimple.R;
-import com.training.edison.codesimple.artical.ArticleActivity;
-import com.training.edison.codesimple.artical.ArticleBean;
-import com.training.edison.codesimple.utils.Utils;
+import com.training.hcz017.xdiary.article.ArticleActivity;
+import com.training.hcz017.xdiary.article.ArticleBean;
+import com.training.hcz017.xdiary.utils.Utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

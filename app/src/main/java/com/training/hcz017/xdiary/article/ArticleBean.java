@@ -1,4 +1,4 @@
-package com.training.edison.codesimple.artical;
+package com.training.hcz017.xdiary.article;
 
 public class ArticleBean {
     private String mTitle;
