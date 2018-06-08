@@ -1,4 +1,4 @@
-package com.training.edison.codesimple.artical;
+package com.training.hcz017.xdiary.article;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import android.util.Log;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.training.edison.codesimple.R;
-import com.training.edison.codesimple.utils.Utils;
+import com.training.hcz017.xdiary.R;
+import com.training.hcz017.xdiary.utils.Utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.training.edison.codesimple">
+    package="com.training.hcz017.xdiary">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -24,18 +24,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".artical.ArticleActivity"
+            android:name="com.training.hcz017.xdiary.article.ArticleActivity"
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBarTransparent" />
 
         <activity
-            android:name=".AboutActivity"
+            android:name="com.training.hcz017.xdiary.AboutActivity"
             android:label="@string/about_activity"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName="com.training.hcz017.xdiary.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.training.hcz017.xdiary.MainActivity" />
         </activity>
     </application>
 

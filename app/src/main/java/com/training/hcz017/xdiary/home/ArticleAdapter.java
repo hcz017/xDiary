@@ -1,4 +1,4 @@
-package com.training.edison.codesimple.home;
+package com.training.hcz017.xdiary.home;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -9,9 +9,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import com.training.edison.codesimple.R;
-import com.training.edison.codesimple.artical.ArticleActivity;
-import com.training.edison.codesimple.artical.ArticleBean;
+import com.training.hcz017.xdiary.R;
+import com.training.hcz017.xdiary.article.ArticleActivity;
+import com.training.hcz017.xdiary.article.ArticleBean;
 
 import java.util.List;
 

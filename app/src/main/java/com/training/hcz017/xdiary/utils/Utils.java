@@ -1,4 +1,4 @@
-package com.training.edison.codesimple.utils;
+package com.training.hcz017.xdiary.utils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

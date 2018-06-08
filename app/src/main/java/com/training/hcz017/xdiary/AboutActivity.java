@@ -1,4 +1,4 @@
-package com.training.edison.codesimple;
+package com.training.hcz017.xdiary;
 
 import android.content.Intent;
 import android.net.Uri;

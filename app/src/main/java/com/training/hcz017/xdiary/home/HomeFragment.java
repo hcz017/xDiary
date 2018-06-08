@@ -1,4 +1,4 @@
-package com.training.edison.codesimple.home;
+package com.training.hcz017.xdiary.home;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,9 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.training.edison.codesimple.R;
-import com.training.edison.codesimple.artical.ArticleBean;
-import com.training.edison.codesimple.utils.Utils;
+import com.training.hcz017.xdiary.R;
+import com.training.hcz017.xdiary.article.ArticleBean;
+import com.training.hcz017.xdiary.utils.Utils;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

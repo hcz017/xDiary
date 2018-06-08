@@ -1,4 +1,4 @@
-package com.training.edison.codesimple;
+package com.training.hcz017.xdiary;
 
 import org.junit.Test;
 

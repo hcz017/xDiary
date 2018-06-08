@@ -1,4 +1,4 @@
-package com.training.edison.codesimple;
+package com.training.hcz017.xdiary;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.training.edison.codesimple", appContext.getPackageName());
+        assertEquals("com.training.hcz017.xdiary", appContext.getPackageName());
     }
 }
